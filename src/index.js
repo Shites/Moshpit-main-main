@@ -1,3 +1,88 @@
+$(document).ready(function () {
+
+    function parsePrice(text) {
+        var clean = text.replace(/[^0-9]/g, '');
+        return clean === '' ? 0 : parseInt(clean, 10);
+    }
+
+    function formatPrice(num) {
+        return '$' + num.toLocaleString('en-US');
+    }
+
+    function updateSummary() {
+        var total = 0;
+        var ongkirTotal = 0;
+        var totalFinal = 0;
+
+        $('.counter-input').each(function () {
+            var qty = parseInt($(this).val(), 10);
+            if (isNaN(qty) || qty < 1) {
+                qty = 1;
+                $(this).val(1);
+            }
+
+            // FIX selector: class kamu NAMANYA original-price
+            var item = $(this).closest('.rounded-lg');
+            var priceEl = item.find('.original-price');
+            var ongkirEl = item.find('.ongkir');
+
+            if (priceEl.length === 0) {
+                return;
+            }
+
+            var price = parsePrice(priceEl.text());
+            var ongkir = parsePrice(ongkirEl.text());
+            
+            
+            ongkirTotal += (ongkir * qty);
+            total += (price * qty);
+            totalFinal += total + ongkirTotal;
+
+            
+            
+        });
+
+        $('.summary-original').text(formatPrice(total));
+        $('.summary-total').text(formatPrice(total));
+        $('.ongkir-total').text(formatPrice(ongkirTotal));
+        $('.totalFinal').text(formatPrice(total + ongkirTotal));
+    }
+
+    $('.increment-button')
+        .off('click')
+        .on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var input = $(this).siblings('.counter-input');
+            var value = parseInt(input.val(), 10);
+            input.val(isNaN(value) ? 1 : value + 1);
+
+            updateSummary();
+        });
+
+    $('.decrement-button')
+        .off('click')
+        .on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var input = $(this).siblings('.counter-input');
+            var value = parseInt(input.val(), 10);
+
+            if (isNaN(value) || value <= 1) {
+                input.val(1);
+            } else {
+                input.val(value - 1);
+            }
+
+            updateSummary();
+        });
+
+    updateSummary();
+});
+
+
 const allHoverImages = document.querySelectorAll('.hover-container div img');
 const imgContainer = document.querySelector('.img-container');
 
@@ -214,5 +299,13 @@ const slider_produk = document.querySelector('.row-produk');
       console.log(walk);
     });
 
-    
-  
+
+
+
+
+
+
+
+
+
+
