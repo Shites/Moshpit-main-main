@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moshpit</title>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script type="text/javascript" src="https://kit.fontawesome.com/b54559f667.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./Asset/Image/Logo-1.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.cdnfonts.com/css/blanka" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;900&amp;family=Roboto:wght@100;300&amp;display=swap" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="./Asset/Image/Logo-nobg-1.png" alt="Moshpit Logo" /></a>
+        <ul class="navmenu">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="product_list.html">PRODUK</a></li>
+            <li><a href="about.html">TENTANG KAMI</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="#"><i class="bx bxs-user"></i></a>
+            <a href="#"><i class="bx bx-cart"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Tampil simple dan elegan dengan MOSHPIT</h5>
+            <h1>SELAMAT DATANG <br />DI <span>MOSHPIT</span></h1>
+            <p>Brand lokal no 1 Indonesia</p>
+            <button type="button" class="main-home-btn">Selengkapnya!</button>
+        </div>
+    </section>
+
+    <!-- Floating Chat -->
+    <button type="button" class="open-button" onclick="openForm();"><i class="fa-solid fa-comments"></i></button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="" method="post" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm();"><i class="fa-solid fa-x"></i></button>
+            <label for="msg"><strong>Kirim pertanyaan melalui Customer service kami</strong></label>
+            <textarea id="msg" name="msg" rows="4" cols="30" required="required"> </textarea>
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </div>
+
+    <!-- Product Section -->
+    <section class="container-top">
+        <div class="title-top">
+            <h3>Simple adalah gayamu</h3>
+            <h1>Produk Teratas!!</h1>
+            <h2>Temukan gaya yang modis dan simple dengan Moshpit</h2>
+        </div>
+        <div class="card-column">
+            <div class="card">
+                <h1 class="card-title"><span>Moshpit</span><br />T-Shirt</h1>
+                <button type="button" class="card-home-btn"><i class="fa-solid fa-bag-shopping"></i> Selengkapnya!</button>
+            </div>
+            <div class="card-2">
+                <h1 class="card-title"><span>Moshpit</span><br />Hoodie</h1>
+                <button type="button" class="card-home-btn"><i class="fa-solid fa-bag-shopping"></i> Selengkapnya!</button>
+            </div>
+            <div class="card-3">
+                <h1 class="card-title"><span>Moshpit</span><br />Totebag</h1>
+                <button type="button" class="card-home-btn"><i class="fa-solid fa-bag-shopping"></i> Selengkapnya!</button>
+            </div>
+            <div class="card-4">
+                <h1 class="card-title"><span>Moshpit</span><br />Sweatshirt</h1>
+                <button type="button" class="card-home-btn"><i class="fa-solid fa-bag-shopping"></i> Selengkapnya!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<section class="footer">
+    <div class="header">
+        <h1 class="child">Hubungi Email Kami</h1>
+        <p class="child">Jadi yang pertama tau Produk terbaru kami dan penawaran spesial kami.</p>
+        <button type="button" class="child-link" href="#">moshpit.clothing@gmail.com</button>
+    </div>
+
+    <div class="contain">
+        <div class="col">
+            <img class="footer-logo" src="./Asset/Image/Logo-nobg-2sl.png" alt="" />
+        </div>
+        <div class="col">
+            <h1>PRODUK</h1>
+            <ul>
+                <li>T Shirt</li>
+                <li>Sweetshirt</li>
+                <li>Hoodie</li>
+                <li>Tote Bag</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h1>PERUSAHAAN</h1>
+            <ul>
+                <li>Tentang Kami</li>
+                <li>Pembuat</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h1>HUBUNGI KAMI</h1>
+            <ul>
+                <li>+62 812-1082-4480</li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-center items-center social">
+            <h1 class="mb-5 text-2xl font-bold">MEDIA</h1>
+            <ul>
+                <li><a href=""><i class="footer-icon fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="footer-icon fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="footer-icon fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="footer-icon fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <p class="copyright">© 2023 Moshpit Website By Founder</p>
+</section>
+    <script type="text/javascript" src="./src/index.js"></script>
+
+</body>
+</html>

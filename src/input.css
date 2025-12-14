@@ -1,0 +1,6 @@
+@import "tailwindcss" important;
+
+@theme
+{
+  --color-mainButton: #435334;
+}
