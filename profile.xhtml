@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moshpit</title>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script type="text/javascript" src="https://kit.fontawesome.com/b54559f667.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./Asset/Image/Logo-1.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.cdnfonts.com/css/blanka" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;900&amp;family=Roboto:wght@100;300&amp;display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="bg-white">
+        <a href="#" class="logo"><img src="./Asset/Image/Logo-nobg-1.png" alt="Moshpit Logo" /></a>
+        <ul class="navmenu">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="product_list.html">PRODUK</a></li>
+            <li><a href="about.html">TENTANG KAMI</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="#"><i class="bx bxs-user"></i></a>
+            <a href="#"><i class="bx bx-cart"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="bg-white mt-10 antialiased dark:bg-gray-900 md:py-8">
+        <div class="mx-auto max-w-5xl px-4 2xl:px-0">
+            <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl md:mb-6">General overview
+            </h2>
+            <div class="py-4 md:py-8">
+                <div class="mb-4 grid gap-4 sm:grid-cols-2 sm:gap-8 lg:gap-16">
+                    <div class="space-y-4">
+                        <div class="flex space-x-4">
+                            <img class="h-16 w-16 rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
+                                alt="Helene avatar" />
+                            <div>
+                                <span
+                                    class="mb-2 inline-block rounded bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">
+                                    PRO Account </span>
+                                <h2
+                                    class="flex items-center text-xl font-bold leading-none text-gray-900 dark:text-white sm:text-2xl">
+                                    Helene Engels</h2>
+                            </div>
+                        </div>
+                        <dl class="">
+                            <dt class="font-semibold text-gray-900 dark:text-white">Email Address</dt>
+                            <dd class="text-gray-500 dark:text-gray-400">helene@example.com</dd>
+                            
+                        </dl>
+                        <dl>
+                            <dt class="font-semibold text-gray-900 dark:text-white">Home Address</dt>
+                            <dd class="flex items-center gap-1 text-gray-500 dark:text-gray-400">
+                                <svg class="hidden h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500 lg:inline"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
+                                </svg>
+                                2 Miles Drive, NJ 071, New York, United States of America
+                            </dd>
+                            <dd class="mt-2 text-blue-700 underline"><a href="">Edit Account</a></dd>
+                        </dl>
+                    </div>
+                    <div class="space-y-4">
+                        <dl>
+                            <dt class="font-semibold text-gray-900 dark:text-white">Phone Number</dt>
+                            <dd class="text-gray-500 dark:text-gray-400">+1234 567 890 / +12 345 678</dd>
+                        </dl>
+                        <dl>
+                            <dt class="mb-1 font-semibold text-gray-900 dark:text-white">Payment Methods</dt>
+                            <dd class="flex items-center space-x-4 text-gray-500 dark:text-gray-400">
+                                <div
+                                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700">
+                                    <img class="h-4 w-auto dark:hidden"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/visa.svg"
+                                        alt="" />
+                                    <img class="hidden h-4 w-auto dark:flex"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/visa-dark.svg"
+                                        alt="" />
+                                </div>
+                                <div>
+                                    <div class="text-sm">
+                                        <p class="mb-0.5 font-medium text-gray-900 dark:text-white">Visa ending in 7658
+                                        </p>
+                                        <p class="font-normal text-gray-500 dark:text-gray-400">Expiry 10/2024</p>
+                                        
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd class="mt-7"><a class="text-red-600 underline mt-10" href="">Delete Account</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="header">
+            <h1 class="child">Hubungi Email Kami</h1>
+            <p class="child">Jadi yang pertama tau Produk terbaru kami dan penawaran spesial kami.</p>
+            <button type="button" class="child-link" href="#">moshpit.clothing@gmail.com</button>
+        </div>
+
+        <div class="contain">
+            <div class="col">
+                <img class="footer-logo" src="./Asset/Image/Logo-nobg-2sl.png" alt="" />
+            </div>
+            <div class="col">
+                <h1>PRODUK</h1>
+                <ul>
+                    <li>T Shirt</li>
+                    <li>Sweetshirt</li>
+                    <li>Hoodie</li>
+                    <li>Tote Bag</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>PERUSAHAAN</h1>
+                <ul>
+                    <li>Tentang Kami</li>
+                    <li>Pembuat</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>HUBUNGI KAMI</h1>
+                <ul>
+                    <li>+62 812-1082-4480</li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center social">
+                <h1 class="mb-5 text-2xl font-bold">MEDIA</h1>
+                <ul>
+                    <li><a href=""><i class="footer-icon fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href=""><i class="footer-icon fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="footer-icon fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="footer-icon fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <p class="copyright">© 2023 Moshpit Website By Founder</p>
+    </section>
+    <script type="text/javascript" src="./src/index.js"></script>
+
+</body>
+
+</html>
